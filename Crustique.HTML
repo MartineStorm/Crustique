@@ -14,8 +14,9 @@
                 <h1>Crustique</h1>
                 </div>
                 <div class="header-right">
-                    <button class="header-button">Buy Gift Card</button>
+                    <button class="header-button" onclick="openModal()">Buy Gift Card</button>
                 <button class="header-button">Join</button>
+                <button id="go-to-cart" class="go-to-cart-button">Go to Shopping Cart</button>
             </div>
          </div>
 
@@ -33,7 +34,6 @@
                         <li><a href="https://www.amazon.com/TAUCI-Sourdough-Lightweight-Non-Toxic-Non-Stick/dp/B0CZLBMT8Z/ref=sr_1_3_sspa?adgrpid=1332610494934530&dib=eyJ2IjoiMSJ9.RiF3vP9m5yNmMEmb1nHSpu3tQsMr2Dqpns0fDeOIMo8a0nYyOwBVbkiCnSqSfSuX0dbvWr3ValTwqW8j9B8_-R37qr9UmH-hGQtvQwX_qBzFMGhn0xvyCUr78s591gtQq9876gJ-aTOYf60CrBhWg4iKoHpmIZqMxxm-Ponzqj-l61bvGvNRsba-tCN-LkODb5HjU4CEqXUdjJqj7gZW3zkwmn-k3Yl7jXyAT_gf6KCgqqY_oaN1PbxF2bwu0WZxM9G0DEYOxO8JlxmwHrMXHORBNSRGn_NY6pDPUNoYjaQ.Ov9WNv_pcyZ7_GcN66UctxHRrjeAhcaab9b1MANSXUo&dib_tag=se&hvadid=83288419387436&hvbmt=bb&hvdev=c&hvlocphy=145350&hvnetw=o&hvqmt=b&hvtargid=kwd-83289206617116&hydadcr=5357_13156885&keywords=pan+for+baking+sourdough&msclkid=db8bdc53d5251d0c5fc7baa2ff59d35f&qid=1727081086&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Pan for baking bread</a></li>
                     </ul>
                 </div>
-            <button id="viewCartBtn">View Cart (0)</button>
         </header>
 
         <main>
@@ -66,6 +66,23 @@
                 </div>
             </section>
         </main>
+
+        <div id="giftCardModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Buy a Gift Card</h2>
+                <p>Choose your amount:</p>
+                <label for="gift-card-type">Select Gift Card Type:</label>
+                <select id="gift-card-type">
+                    <option value="10">$10.00</option>
+                    <option value="25">$25.00</option>
+                    <option value="50">$50.00</option>
+                    <option value="100">$100.00</option>
+                </select>
+                <button class="purchase-button">Purchase</button>
+            </div>
+        </div>        
+
         <script src="Crust.JS"></script>
     </body>
 </html>
