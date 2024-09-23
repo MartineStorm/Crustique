@@ -77,8 +77,11 @@ opacity: 0.9;
 }
 
 .info-box {
-    list-style-type: none;
-    padding: 0;
+    position: relative; /* Position context for the button */
+    padding: 20px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners for the info box */
+    background-color: #fff; /* Background color of the box */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .info-box li {
@@ -95,6 +98,60 @@ opacity: 0.9;
     margin: 0 auto 20px;
     width: 100px;
     height: auto;
+}
+
+
+#toggleButton {
+    position: absolute; /* Position the button relative to the info box */
+    bottom: -20px; /* Move it below the bottom edge */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center adjustment */
+    background-color: hsla(8, 100%, 94%, 1);; /* Button background color */
+    color: hsla(10, 82%, 44%, 1);
+    padding: 10px 30px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 25px; /* Very rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+#toggleButton:hover {
+    background-color: hsla(9, 85%, 86%, 1);
+}
+
+hidden {
+    display: none;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: hsla(8, 100%, 94%, 1);
+    color: hsla(10, 82%, 44%, 1);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 5px 0;
+}
+
+.button-link:hover {
+    background-color: hsla(9, 85%, 86%, 1);
+    opacity: 0.9;
+}
+
+.button-link:visited {
+    color: hsla(10, 82%, 44%, 1);
+}
+
+.button-link:active {
+    color: hsla(10, 82%, 44%, 1);
+}
+
+ul {
+    list-style-type: none; /* Removes default bullets */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
 }
 
 .grid {
@@ -132,15 +189,18 @@ opacity: 0.9;
 }
 
 .add-to-cart {
-    background-color: #6c63ff;
-    color: white;
+    background-color: hsla(8, 100%, 94%, 1);
+    color: hsla(10, 82%, 44%, 1);
+    font-size: 14px;
+    width: 300px;
     border: none;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     cursor: pointer;
 }
 
 .add-to-cart:hover {
+    background-color: hsla(9, 85%, 86%, 1);
     opacity: 0.9;
 }
 

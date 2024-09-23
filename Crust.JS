@@ -54,3 +54,17 @@ document.querySelectorAll('.add-to-cart').forEach(button => {
         alert(`${name} has been added to the cart!`);
     });
 });
+
+
+const toggleButton = document.getElementById("toggleButton");
+const socialLinks = document.getElementById("SocialLinks");
+
+toggleButton.addEventListener("click", function() {
+    if (socialLinks.classList.contains("hidden")) {
+        socialLinks.classList.remove("hidden");
+        toggleButton.textContent = "Collapse";
+    } else {
+        socialLinks.classList.add("hidden");
+        toggleButton.textContent = "Expand";
+    }
+});
