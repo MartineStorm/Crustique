@@ -1,0 +1,136 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f8f8f8;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(35, 55, 104);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-logo {
+width: 60px;
+height: auto;
+margin-bottom: 10px;
+}
+
+.header-button {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.header-button:hover {
+opacity: 0.9;
+}
+
+.gift-card-button {
+    display: flex;
+    align-items: center;
+}
+
+.gift-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.info-box {
+    background: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 40px !important;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-box {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-box li {
+    margin: 10px;
+}
+
+.info-box a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.info-image {
+    display: black;
+    margin: 0 auto 20px;
+    width: 100px;
+    height: auto;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 40px;
+}
+
+.bread-box {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bread-box img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.add-to-cart {
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    opacity: 0.9;
+}
