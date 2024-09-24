@@ -36,7 +36,7 @@ margin-bottom: 10px;
 
 .header-button {
     background: #ffffff;
-    color: rgb(0, 0, 0);
+    color: #e06b6b;
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
@@ -59,6 +59,27 @@ opacity: 0.9;
     margin-right: 5px;
 }
 
+.go-to-cart-button {
+    background-color: hsla(8, 100%, 94%, 1);
+    color: hsla(10, 82%, 44%, 1);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.go-to-cart-button:hover {
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+
+/* Join button LATER */
+
 .info-box {
     background: #ffffff;
     border: 1px solid #d3d3d3;
@@ -68,7 +89,7 @@ opacity: 0.9;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin-left: auto;
+    margin: 30px auto;
     margin-right: auto;
 }
 
@@ -94,7 +115,7 @@ opacity: 0.9;
 }
 
 .info-image {
-    display: black;
+    display: block;
     margin: 0 auto 20px;
     width: 100px;
     height: auto;
@@ -106,7 +127,7 @@ opacity: 0.9;
     bottom: -20px; /* Move it below the bottom edge */
     left: 50%; /* Center it horizontally */
     transform: translateX(-50%); /* Center adjustment */
-    background-color: hsla(8, 100%, 94%, 1);; /* Button background color */
+    background-color: hsla(8, 100%, 94%, 1); /* Button background color */
     color: hsla(10, 82%, 44%, 1);
     padding: 10px 30px; /* Padding for the button */
     border: none; /* No border */
@@ -118,10 +139,6 @@ opacity: 0.9;
 
 #toggleButton:hover {
     background-color: hsla(9, 85%, 86%, 1);
-}
-
-hidden {
-    display: none;
 }
 
 .button-link {
@@ -161,6 +178,21 @@ ul {
     gap: 40px;
 }
 
+.currentbakes-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    margin: 40px 100px;
+}
+
+.bread-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .bread-box {
     width: 350px;
     height: 500px;
@@ -173,6 +205,7 @@ ul {
     position: relative;
     border: 1px solid #ccc;
     display: inline-block;
+    margin: 10px;
 }
 
 .bread-box img {
@@ -182,13 +215,7 @@ ul {
     object-fit: cover;
 }
 
-.bread-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.add-to-cart {
+.click-to-order {
     background-color: hsla(8, 100%, 94%, 1);
     color: hsla(10, 82%, 44%, 1);
     font-size: 14px;
@@ -199,7 +226,7 @@ ul {
     cursor: pointer;
 }
 
-.add-to-cart:hover {
+.click-to-order:hover {
     background-color: hsla(9, 85%, 86%, 1);
     opacity: 0.9;
 }
@@ -265,23 +292,3 @@ select {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-
-.go-to-cart-button {
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    text-align: center;
-    display: inline-block;
-    margin: 20px auto;
-}
-
-.go-to-cart-button:hover {
-    background-color: #ffffff;
-    opacity: 0.9;
-}
-
-
